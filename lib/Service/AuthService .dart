@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class AuthService {
-  final String baseUrl = 'http://localhost:8084/api/auth'; // Replace with your API base URL
+  final String baseUrl = 'https://springbootrendesvous.onrender.com/api/auth'; // Replace with your API base URL
 
   Future<JwtResponse> signIn(String username, String password) async {
     final url = Uri.parse('$baseUrl/signin');

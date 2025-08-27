@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:rendezvous/modele/RendezVous.dart';
 
 class RendezVousService {
-  final String baseUrl = 'http://localhost:8084/api/RendezVous';
+  final String baseUrl = 'https://springbootrendesvous.onrender.com/api/RendezVous';
 
   // Méthode pour ajouter un rendez-vous
   Future<Map<String, dynamic>> ajouterRendezVous(int professionnelId, RendezVous rendezVous) async {

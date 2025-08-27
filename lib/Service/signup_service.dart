@@ -4,7 +4,7 @@ import 'package:rendezvous/modele/signup_request.dart';
 
 // Service pour l'inscription
 class SignupService {
-  final String baseUrl = 'http://localhost:8084/api/auth'; // Remplacez par l'URL de base de votre API
+  final String baseUrl = 'https://springbootrendesvous.onrender.com/api/auth'; // Remplacez par l'URL de base de votre API
 
   Future<MessageResponse> signUp(SignupRequest signupRequest) async {
     final url = Uri.parse('$baseUrl/signup');
