@@ -1,5 +1,17 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "builds": [
+    {
+      "src": "**/pubspec.yaml",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "flutter build web --release"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/build/web/$1"
+    }
   ]
 }
