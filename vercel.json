@@ -2,10 +2,7 @@
   "builds": [
     {
       "src": "Dockerfile",
-      "use": "@vercel/static-build",
-      "config": {
-        "outputDirectory": "build/web"
-      }
+      "use": "@vercel/docker"
     }
   ]
 }
